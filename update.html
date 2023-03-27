@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Update-User</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body id="main">
+      <nav class="navbar" id="navbar">
+        <a class="navbar-brand" href="index.html" id="logo"><span>i</span>learn</a>
+        <div class="logout">
+          <a href="login.html"class="nav-link">logout</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        <div class="navbar-collapse" id="myTopnav">    
+          <a class="nav-link" href="student.html">Students</a>
+                    <a class="nav-link" href="course.html">Courses</a>
+                    <a class="nav-link" href="index.html">Instructors</a>
+        </div>
+</nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open"><i class="fa-solid fa-circle-arrow-right"></i> </span>
+          <span style="font-size:30px;cursor:pointer" onclick="closeNav()" id="close"><i class="fa-solid fa-circle-arrow-left"></i> </span>
+        </div>
+        <div class="container">
+          <p>Update User</p>
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="Email">Old Email</label>
+                <input type="email" id="email" name="Email" placeholder="Instructor Email.." disabled class="update">
+              </div>
+              <div class="col-75">
+                  <label for="Email">New Email</label>
+                <input type="email" id="email" name="Email" placeholder="Instructor Email..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Password">Old Password</label>
+                <input type="password" id="password" name="password" placeholder="Instructor password.." disabled class="update">
+              </div>
+              <div class="col-75">
+                <label for="Password">New Password</label>
+                <input type="password" id="password" name="password" placeholder="Instructor password..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Phone">Old Phone</label>
+                <input type="tel" id="Phone" name="Phone"placeholder="Instructor Phone Number.." disabled class="update">
+              </div>
+              <div class="col-75">
+                <label for="Phone">New Phone</label>
+                <input type="tel" id="Phone" name="Phone"placeholder="Instructor Phone Number..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Status">Old Status</label>
+                <input id="Status" name="Status" placeholder="Old Status" disabled >              
+            
+              </div>
+              <div class="col-75">
+                <label for="Status">New Status</label>
+                  <select id="Status" name="Status">
+                      <option value="Active">Active</option>
+                      <option value="inActive">inActive</option>
+                    </select>                
+                  </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    <footer class="about-section">
+      <h3>About Us </h3>
+      <h4>iLearn</h4>
+      <h5> Where learn is easy,fun & productive</h5>
+      <p text-align=left>Contact Us.</p>
+      <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+      <a href="https://api.whatsapp.com" class="fa fa-whatsapp"></a>
+      <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+      <p text-align=left>iLearn
+      All rights reserved</p>
+    </footer>
+    </body>
+
+
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Add-Courses</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body id="main">
+        <nav class="navbar" id="navbar">
+            <a class="navbar-brand" href="index.html" id="logo"><span>i</span>learn</a>
+            <div class="logout">
+              <a href="login.html"class="nav-link">logout</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            <div class="navbar-collapse" id="myTopnav">    
+                <a class="nav-link" href="student.html">Students</a>
+                <a class="nav-link" href="course.html">Courses</a>
+                <a class="nav-link" href="index.html">Instructors</a>
+            </div>
+    </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="course.html">Show courses</a>
+            <a href="courseAdd.html">Add courses</a>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open"><i class="fa-solid fa-circle-arrow-right"></i> </span>
+          <span style="font-size:30px;cursor:pointer" onclick="closeNav()" id="close"><i class="fa-solid fa-circle-arrow-left"></i> </span>
+        </div>
+        
+        <div class="container">
+          <p>Add Course</p>
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="Name">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="text" name="name" placeholder="Course Name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Number">Code</label>
+              </div>
+              <div class="col-75">
+                <input type="number" id="number" name="number"placeholder="Course Code..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Status">Status</label>
+              </div>
+              <div class="col-75">
+                  <select id="Status" name="Status">
+                      <option value="Active">Active</option>
+                      <option value="inActive">inActive</option>
+                    </select>                
+                  </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    <footer class="about-section">
+      <h3>About Us </h3>
+      <h4>iLearn</h4>
+      <h5> Where learn is easy,fun & productive</h5>
+      <p text-align=left>Contact Us.</p>
+      <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+      <a href="https://api.whatsapp.com" class="fa fa-whatsapp"></a>
+      <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+      <p text-align=left>iLearn
+      All rights reserved</p>
+    </footer>
+    </body>
+
+
+
+
+</html>
