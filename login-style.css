@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/*login css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Monserrat",sans-serif;
+    background-size: cover;
+    background-image: url("Freerange.jpg");
+    background-position: center;
+}  
+
+.box {
+    border-radius: 20px;
+    width: 350px;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 2px #ffc400ef;
+    display: flex;
+    flex-direction: column;
+    border: 1px  ;
+    height:500px;
+}
+
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
+
+#username,
+#password{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: rgb(256, 256, 256);
+    font-size: 21px;
+    
+}
+
+.box input[type="text"],
+.box input[type="password"]{
+    font-size: 25px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    border: 2px solid #ffc400ef;
+    padding: 20px 10px;
+    width: 280px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: all .3s;
+}
+
+.warrper{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+#btn {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ef;
+    padding: 14px 35px;
+    outline: none;
+    font-size: 18px;
+    color: rgb(256, 256, 256);
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #ffc400ca;
+}
+
+#user
+{
+ position: absolute ;
+ left: 566px;
+ bottom: 413px;
+ color: rgb(256, 256, 256);
+}
+#lock{
+    position: absolute ;
+    left: 566px;
+    bottom: 265px;
+    color: rgb(256, 256, 256);  
+}
